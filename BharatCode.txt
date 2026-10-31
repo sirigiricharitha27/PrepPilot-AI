@@ -1,0 +1,21 @@
+PrepPilot AI — BharatCode Build League
+
+Project: PrepPilot AI
+Category: Learning & education
+
+Purpose
+PrepPilot AI is a student learning companion for Classes 1–10. It provides practice questions, hints, explanations, test mode, progress summaries, concept progress, revision suggestions, explain-back practice, and an AI Study Buddy interface.
+
+AI integration
+The Node.js server calls the BharatCode chat-completions API using the server-side environment variable BHARATCODE_API_KEY. The model and endpoint can be configured with BHARATCODE_MODEL and BHARATCODE_API_URL. No real API key is included in this repository. When no key is configured, the app uses built-in demo responses.
+
+Run locally
+1. Install Node.js 18 or newer.
+2. Set BHARATCODE_API_KEY in the environment (do not put a real key in this file).
+3. Run `node server.js` from the project folder.
+4. Open http://localhost:3000.
+
+Notes
+This is a prototype. Student progress is stored in browser local storage on the device. Review the educational content and test the configured API before public use.
+
+Account features: email/password sign-up and sign-in, sign-out, salted scrypt password hashes, and per-account server-side progress persistence for local demo use.
